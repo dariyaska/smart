@@ -8,14 +8,18 @@ public class Main {
         phone.connectToInternet();
         phone.makeCall("+77753352892");
 
+
         watch.turnOn();
         watch.connectToInternet();
+        watch.connectionComplete();
         watch.trackHeartRate();
+
 
         tv.turnOn();
         tv.connectToInternet();
+        tv.connectionComplete();
         tv.streamVideo("https://youtu.be/baaNwRAhHBo?si=lb1fKyDYhcFPGjtI");
 
-        phone.connectToDevice(tv);
     }
 }
+

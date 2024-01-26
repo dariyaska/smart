@@ -1,22 +1,21 @@
 class SmartTV extends Gadget {
-    void receiveNotification(String message) {
+    public void receiveNotification(String message) {
         System.out.println("Смарт-телевизор получил увед: " + message);
     }
 
-    void batteryStatus() {
-
+    public void batteryStatus() {
+        System.out.println("Уровень заряда аккумулятора смарт-телевизора: N/A");
     }
 
-    void streamVideo(String url) {
+    public void streamVideo(String url) {
         System.out.println("Воспроизведение видео по адресу: " + url);
     }
 
-    void changeChannel(int channel) {
+    public void changeChannel(int channel) {
         System.out.println("Переключение канала на: " + channel);
     }
 
-    void connectToDevice(SmartDevice anotherDevice) {
-        System.out.println("Установка соединения с другим устройством.");
-
+    public void connectionComplete() {
+        System.out.println("К смарт-телевизору подключились.");
     }
 }

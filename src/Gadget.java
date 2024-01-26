@@ -11,6 +11,7 @@ abstract class Gadget implements SmartDevice {
         System.out.println("Устройство подключено к интернету.");
     }
 
-    abstract void receiveNotification(String message);
-    abstract void batteryStatus();
+    public abstract void connectionComplete();
+    public abstract void receiveNotification(String message);
+    public abstract void batteryStatus();
 }
